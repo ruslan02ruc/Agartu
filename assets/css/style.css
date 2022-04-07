@@ -2647,7 +2647,7 @@ hr {
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .main-header .main-menu {
-        margin-right: 30px
+        /* margin-right: 30px */
     }
 }
 
@@ -2660,7 +2660,7 @@ hr {
 .main-header .main-menu ul li a {
     color: #002e5b;
     font-weight: 500;
-    padding: 15px 10px;
+    padding: 15px 5px;
     display: block;
     font-size: 14px;
     -webkit-transition: all .3s ease-out 0s;
@@ -2679,7 +2679,7 @@ hr {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .main-header .main-menu ul li a {
-        padding: 20px 4px
+        padding: 8px 5px
     }
 }
 
@@ -7121,7 +7121,7 @@ ul {
     }
 }
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 768px) {
     .btn-discussions {
         display: grid;
     }
@@ -7185,15 +7185,29 @@ ul {
     text-transform: initial;
 }
 
+@media (min-width: 767px) and (max-width: 1300px) {
+    .main-header .main-menu ul li a {
+        padding: 6px 5px;
+    }
+}
+@media (min-width: 200px) and (max-width: 767px) {
+    .slicknav_collapsed a .fas{
+        display: none;
+    }
+    .slicknav_open a .fas{
+        display: none;
+    }
+}
+
 @media (min-width: 444px) and (max-width: 767px) {
     .slicknav_nav {
-        width: 120%!important;
+        width: 220px!important;
     }
 }
 
 @media (min-width: 200px) and (max-width: 443px) {
     .slicknav_nav {
-        width: 130%!important;
+        width: 220px!important;
     }
 }
 

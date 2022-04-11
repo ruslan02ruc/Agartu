@@ -260,7 +260,26 @@
             margin-left: 0px;
         }
         
-        .form-search {}
+        .search .form-control{
+            color: black;
+            height: 35px;
+        }
+        .search .nice-select{
+            line-height: 35px;
+            height: 35px;
+            border: 1px solid #ced4da;
+        }
+        .searchButton2 {
+            border: 1px solid #ced4da;
+            background: #2692d8;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
     </style>
 </head>
 
@@ -329,7 +348,7 @@
                                                 </ul>
                                             </li>
                                             <li><a href="reviews.html">Отзывы</a></li>
-                                            <li><a href="#">3lvl</a>
+                                             <!-- <li><a href="#">3lvl</a>
                                                 <ul class="submenu">
                                                     <li><a href="elements.html">Element</a></li>
                                                     <li><a href="#">Blog</a>
@@ -348,7 +367,7 @@
                                                     </li>
                                                     <li><a href="elements.html">Element</a></li>
                                                 </ul>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </nav>
                                 </div>
@@ -404,26 +423,112 @@
                     </div>
                 </div>
                 <div class="row">
+                    <!-- <div class="col-lg-2">
+                        <div class="properties__button mt-30">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist" style="display: flex; flex-direction: column; background-color: #fbf9ff;">
+                                    <a class="nav-item nav-item-color nav-link active" id="nav-all-news-tab" data-toggle="tab" href="#nav-all-news" role="tab" aria-controls="nav-all-news" aria-selected="true">все новости</a>
+                                    <div class="pol"></div>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory1-tab" data-toggle="tab" href="#nav-subcategory1" role="tab" aria-controls="nav-subcategory1" aria-selected="false">Новости</a>
+                                    <div class="pol"></div>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory2-tab" data-toggle="tab" href="#nav-subcategory2" role="tab" aria-controls="nav-subcategory2" aria-selected="false">Спорт</a>
+                                    <div class="pol"></div>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory3-tab" data-toggle="tab" href="#nav-subcategory3" role="tab" aria-controls="nav-subcategory3" aria-selected="false">Культура</a>
+                                    <div class="pol"></div>
+                                    
+                                </div>
+                            </nav>                      
+                        </div>
+                    </div> -->
                     <div class="col-lg-12">
                         <div class="news-search-list">
-                            <div class="text-center mb-50">
+                            <div class="text-center mb-20">
                                 <h3>Результаты поиска</h3>
                             </div>
                             <form class=" form-search mb-40">
-                                <div class="row input-append">
-                                    <div class="col-lg-2 сol-sm-4" style="margin: auto;">
-                                        <h3>Новости</h3>
-                                    </div>
-                                    <div class="col-lg-10 сol-sm-8" style="margin: auto;">
-                                        <div class="search">
-                                            <input type="text" class="searchTerm" placeholder="Найти" style="width: 100%;">
-                                            <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                                <div class="container">
+                                    <div class="row">
+                                        <h6>Категории поиска</h6>
+                                        <div class="w-100"> </div>
+                                        <div class="col-lg-10 сol-sm-8" style="padding-left: 0;">
+                                            <div class="search">
+                                                <input type="text" class="form-control" placeholder="Найти" style="width: 100%;">
+                                                <div class=" col-lg-2 сol-sm-2">
+                                                    <select class="search " id="SearchCustomSelect" style="display: none;">
+                                                      <option value="1">Все категории</option>
+                                                      <option value="3">Новости</option>
+                                                      <option value="4">Сообщества</option>
+                                                      <option value="5">Обсуждения</option>
+                                                    </select>
+                                                </div>
+                                                <button type="submit" class="searchButton2">Поиск<i class="fa fa-search"></i></button>
+                                            </div>
                                         </div>
+                                      
                                     </div>
                                 </div>
                             </form>
                             <div class="trending-bottom">
-                                <div class="news-platform-list  grid ">
+                                <div class="row input-append">
+                                    <div class="pb-20" style="margin: auto;">
+                                        <h3>Новости</h3>
+                                    </div>
+                                </div>
+                                <div class="news-platform-list  grid">
+                                    <div class="p-3 border-color">
+                                        <div class="row single-bottom">
+                                            <div class="col   mb-30">
+                                                <img class="Search-img" src="  assets/img/blog/blog_4.png" alt="">
+                                            </div>
+                                            <div class="col trend-bottom-cap">
+                                                <span class="color1">Культура</span>
+                                                <h5><a href="details.html">Создайте иллюзию более полных ресниц с помощью “Маскировки”.</a></h5>
+                                            </div>
+                                            <div class="w-100"></div>
+                                            <div class="col ">
+                                                <p class=" "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство "...</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="news-author-list-item-text ">
+                                            <ul class="blog-info-link ">
+                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
+                                                <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
+                                                <li><a href="# "><i class="fa fa-eye "></i> 15 </a></li>
+                                                <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
+                                            </ul>
+                                            <div class="btn-news-detail-container text-center ">
+                                                <a class=" btn-news-detail" href=" ">подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 border-color">
+                                        <div class="row single-bottom">
+                                            <div class="col   mb-30">
+                                                <img class="Search-img" src="  assets/img/blog/blog_4.png" alt="">
+                                            </div>
+                                            <div class="col trend-bottom-cap">
+                                                <span class="color1">Культура</span>
+                                                <h5><a href="details.html">Создайте иллюзию более полных ресниц с помощью “Маскировки”.</a></h5>
+                                            </div>
+                                            <div class="w-100"></div>
+                                            <div class="col ">
+                                                <p class=" "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство "...</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="news-author-list-item-text ">
+                                            <ul class="blog-info-link ">
+                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
+                                                <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
+                                                <li><a href="# "><i class="fa fa-eye "></i> 15 </a></li>
+                                                <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
+                                            </ul>
+                                            <div class="btn-news-detail-container text-center ">
+                                                <a class=" btn-news-detail" href=" ">подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="p-3 border-color">
                                         <div class="row single-bottom">
                                             <div class="col   mb-30">
@@ -505,7 +610,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="p-3 border-color">
+                                    <!-- <div class="p-3 border-color">
                                         <div class="row single-bottom">
                                             <div class="col   mb-30">
                                                 <img class="Search-img" src="  assets/img/blog/blog_4.png" alt="">
@@ -830,9 +935,167 @@
                                                 <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
+                                    </div> -->
+                                </div>
+                                <div class="news-discussions-list mt-20"> 
+                                    <div class="row input-append">
+                                        <div class="pb-20" style="margin: auto;">
+                                            <h3>Обсуждения</h3>
+                                        </div>
+                                    </div>
+                                    <div class="trending-bottom">
+                                        <div class="grid-discussions ">
+                                            <div class="p-3 border-color">
+                                                <div class="row single-bottom">
+                                                    <div class="col-5   mb-30">
+                                                        <img class="Search-img" src="assets/img/blog/blog_4.png" alt="">
+                                                    </div>
+                                                    <div class="col-7 trend-bottom-cap">
+                                                        <span class="color1">Культура</span>
+                                                        <h5><a href="details.html">Создайте иллюзию более полных ресниц с помощью “Маскировки”.</a></h5>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col ">
+                                                        <p class=" "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство "...</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="news-author-list-item-text ">
+                                                    <ul class="blog-info-link ">
+                                                        <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
+                                                        <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
+                                                        <li><a href="# "><i class="fa fa-eye "></i> 15 </a></li>
+                                                        <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
+                                                    </ul>
+                                                    <div class="btn-news-detail-container text-center ">
+                                                        <a class="btn-news-detail" href="details.html">подробнее</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 border-color">
+                                                <div class="row single-bottom">
+                                                    <div class="col-5   mb-30">
+                                                        <img class="Search-img" src="  assets/img/blog/blog_4.png" alt="">
+                                                    </div>
+                                                    <div class="col-7 trend-bottom-cap">
+                                                        <span class="color1">Культура</span>
+                                                        <h5><a href="details.html">Создайте иллюзию более полных ресниц с помощью “Маскировки”.</a></h5>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col ">
+                                                        <p class=" "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство "...</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="news-author-list-item-text ">
+                                                    <ul class="blog-info-link ">
+                                                        <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
+                                                        <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
+                                                        <li><a href="# "><i class="fa fa-eye "></i> 15 </a></li>
+                                                        <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
+                                                    </ul>
+                                                    <div class="btn-news-detail-container text-center ">
+                                                        <a class="btn-news-detail" href="details.html">подробнее</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 border-color">
+                                                <div class="row single-bottom">
+                                                    <div class="col-5   mb-30">
+                                                        <img class="Search-img" src="  assets/img/blog/blog_4.png" alt="">
+                                                    </div>
+                                                    <div class="col-7 trend-bottom-cap">
+                                                        <span class="color1">Культура</span>
+                                                        <h5><a href="details.html">Создайте иллюзию более полных ресниц с помощью “Маскировки”.</a></h5>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col ">
+                                                        <p class=" "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство "...</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="news-author-list-item-text ">
+                                                    <ul class="blog-info-link ">
+                                                        <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
+                                                        <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
+                                                        <li><a href="# "><i class="fa fa-eye "></i> 15 </a></li>
+                                                        <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
+                                                    </ul>
+                                                    <div class="btn-news-detail-container text-center ">
+                                                        <a class="btn-news-detail" href="details.html">подробнее</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="news-discussions-list mt-20">
+                                <div class="news-communities-list mt-20 ">
+                                    <div class="row input-append">
+                                        <div class="pb-20" style="margin: auto;">
+                                            <h3>Сообщества</h3>
+                                        </div>
+                                    </div>
+                                    <div class="grid-communities ">
+                                        <div class="single-bottom mb-35 p-3 border-color ">
+                                            <div class="trend-search-img mb-10 ">
+                                                <img class="communities-search-img " src="assets/img/logo/photo.jpg " alt=" ">
+                                            </div>
+                                            <div class="trend-bottom-cap ">
+                                                <h5><a href="photo.html">Сообщество фотографов</a></h5>
+                                                <ul class="blog-info-link ">
+                                                    <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
+                                                    <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
+                                                    <li><a href="# "><i class="fa fa-eye "></i> 15 </a></li>
+                                                    <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="single-bottom mb-35 p-3 border-color ">
+                                            <div class="trend-search-img mb-10 ">
+                                                <img class="communities-search-img " src="assets/img/logo/photo.jpg " alt=" ">
+                                            </div>
+                                            <div class="trend-bottom-cap ">
+                                                <h5><a href="photo.html">Сообщество фотографов</a></h5>
+                                                <ul class="blog-info-link ">
+                                                    <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
+                                                    <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
+                                                    <li><a href="# "><i class="fa fa-eye "></i> 15 </a></li>
+                                                    <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="single-bottom mb-35 p-3 border-color ">
+                                            <div class="trend-search-img mb-10 ">
+                                                <img class="communities-search-img " src="assets/img/logo/photo.jpg " alt=" ">
+                                            </div>
+                                            <div class="trend-bottom-cap ">
+                                                <h5><a href="photo.html ">Сообщество фотографов</a></h5>
+                                                <ul class="blog-info-link ">
+                                                    <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
+                                                    <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
+                                                    <li><a href="# "><i class="fa fa-eye "></i> 15 </a></li>
+                                                    <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="single-bottom mb-35 p-3 border-color ">
+                                            <div class="trend-search-img mb-10 ">
+                                                <img class="communities-search-img " src="assets/img/logo/photo.jpg " alt=" ">
+                                            </div>
+                                            <div class="trend-bottom-cap ">
+                                                <h5><a href="photo.html ">Сообщество фотографов</a></h5>
+                                                <ul class="blog-info-link ">
+                                                    <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
+                                                    <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
+                                                    <li><a href="# "><i class="fa fa-eye "></i> 15 </a></li>
+                                                    <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="news-discussions-list mt-20">
                                     <form class=" form-search mb-40">
                                         <div class="row input-append">
                                             <div class="col-lg-2 сol-sm-4" style="margin: auto;">
@@ -1012,8 +1275,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="news-communities-list mt-20 ">
+                                </div> -->
+                                <!-- <div class="news-communities-list mt-20 ">
                                     <form class=" form-search mb-40 ">
                                         <div class="row input-append ">
                                             <div class="col-lg-2 сol-sm-4" style="margin: auto;">
@@ -1071,7 +1334,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

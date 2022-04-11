@@ -9,21 +9,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-
-    <link rel="stylesheet" href="assets/css/ticker-style.css">
-
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-
     <link rel="stylesheet" href="assets/css/slicknav.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -35,56 +31,112 @@
     <!-- javascript -->
     <script src="../assets3/vendors/jquery.min.js"></script>
     <script src="../assets3/owlcarousel/owl.carousel.js"></script>
-
     <style>
-        #carouselExampleControls1 {
-            margin-left: 88px;
-            margin-right: 88px;
+        .contact-section {
+            padding: 30px 0 30px;
+        }
+        .pol {
+            border-bottom: 1px solid rgb(77, 87, 218);
+        }
+        .trand-right-img img {
+            width: 110px;
+            height: 110px !important;
+            margin: 0px auto 0px auto;
+            display: block;
+        }
+        .trand-right-img2 img {
+            width: 110%;
+            margin: 0px auto 0px auto;
+            display: block;
+        }
+        .regportals_text {
+            padding-top: 20px;
         }
         
-        #carouselExampleControls2 {
-            margin-left: 300px;
-            margin-top: -110px;
+        .regportals_indent {
+            padding-bottom: 10px;
         }
-        
-        .follow__us {
-            text-align: center;
+        .regportals_useful {
+            padding-top: 40px;
+        }    
+        .pol3 {
+            border-bottom: 1px solid rgb(167, 168, 190);
         }
-        
-        .category {
-            margin-bottom: 10px;
-        }
-        
-        .color1 {
-            padding: 8px 20px;
-            border-radius: 5px;
-        }
-        
-        .btn-delete {
-            color: red;
-        }
-        
-        .btn-answer {
-            color: rgb(35 147 218);
-        }
-        
-        .link-source a {
-            color: #3c7edd;
-        }
-        
-        .link-source a:hover {
-            color: #fd7b10;
-        }
-        
-        .link-source {
+        .regportals_carousel_text {
+            padding-top: 20px;
             padding-bottom: 20px;
         }
-    </style>
+        .brd {
+            border: 1px double #a1a1a1;
+            padding: 5px;
+        }       
+        .col-5 .brd {
+            margin: auto;
+        }
+        .border {
+            padding: 20px;
+        }
+        .border:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .btn {
+            padding: 20px 30px;
+            background: #3c7edd;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            grid-gap: 1rem;
+        } 
+        .grid>div {
+            border-radius: 1rem;
+        }     
+        .name_service {
+            text-align: center;
+            text-transform: capitalize;
+            margin: auto;
+        }   
+        .list-switch {
+            cursor: pointer;
+        }
+        .list-switch :hover {
+            color: rgb(58, 50, 50);
+        }
+        
 
+
+        .card2 {
+            padding-bottom: 20px;
+        }
+        
+        a:hover {
+            color: black;
+        }
+        
+        .card-header {
+            border: 1px double rgb(168, 156, 156);
+        }
+        .vacancies_line {
+            border-bottom: 1px solid rgb(162, 164, 185);
+        }
+        
+        .form-check-input {
+            transform: scale(1.8);
+        }
+        
+        .form-check-label {
+            padding-bottom: 10px;
+        }
+        
+        .border_category {
+            padding: 20px;
+            border: 1px double rgb(175, 173, 173);
+        }
+    </style>
 </head>
 
 <body>
-  <header>
+     <header>
         <!-- Header Start -->
         <div class="header-area">
             <div class="main-header ">
@@ -114,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-               <div class="header-bottom header-relative">
+             <div class="header-bottom header-relative">
                     <div class="container">
                         <div class="row align-items-center" style="flex-wrap:nowrap">
                             <div class="col-auto" style="padding-right: 0;">
@@ -190,7 +242,7 @@
                                 </div>
                             </div>
                          
-                            <div class="col-auto" style="padding-left: 0;">
+                            <div class="col-auto">
                                 <div class="Search-news">
                                     <input type="text" class="form-control">
                                     <a href="Search.html" class="Search-news header-right-btn">
@@ -207,7 +259,8 @@
         </div>
         <!-- Header End -->
     </header>
-    <main>
+    <!-- ================ contact section start ================= -->
+    <section class="contact-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -215,300 +268,306 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                                <li class="breadcrumb-item"><a href="news-list.html">Новости платформы</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Новость</li>
+                                <li class="breadcrumb-item active" aria-current="page">Предприятия организации</li>
                             </ol>
                         </nav>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="wrap pb-30">
+                        <div class="search">
+                            <input type="text" class="searchTerm" placeholder="Найти" style="width: -webkit-fill-available;">
+                            <button type="submit" class="searchButton">
+                          <i class="fa fa-search"></i>
+                          </button>
+                        </div>
+                    </div>
+                    <div class="grid " id="id1 ">
 
-        <!-- Start Youtube -->
-        <div class="youtube-area">
-            <div class="container">
-                <!-- Hot Aimated News Tittle-->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="trending-tittle">
-                            <strong>Актуальные</strong>
-                            <!-- <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                            <div class="trending-animated">
-                                <ul id="js-news" class="js-hidden">
-                                    <li class="news-item">Бангладеш - это наши клиенты.</li>
-                                    <li class="news-item">Спондон, ЭТО сидеть амет, консектетур</li>
-                                    <li class="news-item">Бизнес-маркетинг, онлайн-скидки.</li>
-                                </ul>
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="https://1.astana-bilim.kz/" style="margin: auto;" target="_blank"><img src="https://cdn1.kdt.kz/files/sites/1374125625025789/files/widgets/site-catalog/1.png" alt=""></a>
+                                </div>
                             </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="https://1.astana-bilim.kz/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Школа-лицей №1</h6>
+                                </a>
+                            </div>
+                        </div>
 
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="https://enu.kz/" style="margin: auto;" target="_blank"><img src="https://cdn1.kdt.kz/files/sites/1374125625025789/files/widgets/site-catalog/1386568315486279/ru/649256616-enu.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="https://enu.kz/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Евразийский национальный университет</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="http://www.kazuniart.kz" style="margin: auto;" target="_blank"><img src="https://cdn1.kdt.kz/files/sites/1374125625025789/files/widgets/site-catalog/1386568315486279/ru/404652758-kaznui.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="http://www.kazuniart.kz" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Казахский национальный университет исскуств</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="http://www.nu.edu.kz/" style="margin: auto;" target="_blank"><img src="https://cdn1.kdt.kz/files/sites/1374125625025789/files/widgets/site-catalog/1386568315486279/ru/nu.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="http://www.nu.edu.kz/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Назарбаев университет</h6>
+                                </a>
+                            </div>
+                        </div>          
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="https://kazatu.edu.kz/?lang=ru" style="margin: auto;" target="_blank"><img src="https://cdn1.kdt.kz/files/sites/1374125625025789/files/widgets/site-catalog/1386568315486279/ru/ft_logo.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="https://kazatu.edu.kz/?lang=ru" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Казахский агротехнический университет</h6>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="https://dl.amu.kz/" style="margin: auto;" target="_blank"><img src="https://cdn1.kdt.kz/files/sites/1374125625025789/files/widgets/site-catalog/1386568315486279/ru/logo.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="https://dl.amu.kz/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Сайт Карта Школьная форма Медицинский университет Астана</h6>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="https://www.gukkazguu.kz/ru/" style="margin: auto;" target="_blank"><img src="https://cdn1.kdt.kz/files/sites/1374125625025789/files/widgets/site-catalog/1374724845544982/ru/kazguu.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="https://www.gukkazguu.kz/ru/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Гуманитарно-юридический колледж КазГЮУ</h6>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                        
+                    
+                    </div>
+                    <div class="pagination-area pt-85" style="text-align: center;">
+                        <div class="container">
+                            <div class="row regseti-row-content">
+                                <div class="col-xl-12">
+                                    <div class="single-wrap d-flex justify-content-center">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-start">
+                                                <li class="page-item"><a class="page-link" href="#"><span class="flaticon-arrow roted"></span></a></li>
+                                                <li class="page-item active"><a class="page-link" href="">01</a></li>
+                                                <li class="page-item"><a class="page-link" href="regseti2">02</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                                <li class="page-item"><a class="page-link" href="regseti2.html"><span class="flaticon-arrow right-arrow"></span></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-3">
+                    <div class="mb-20">
+                        <div id="accordion" class="border_category">
+                            <form action="">
+                                <div class="card2">
+                                    <div class="card-header2" id="headingFour">
+                                        <h5 class="mb-0">
+                                            <a class="vacancies_category" data-toggle="collapse" href="#collapseExampleFour" role="button" aria-expanded="false" aria-controls="collapseExample">Область<i class='fas fa-angle-down'></i></a>
+                                        </h5>
+                                    </div>
 
-            </div>
-        </div>
-        </div>
-        <div class="about-area">
-            <div class="container">
-                <!-- Hot Aimated News Tittle-->
-                <div class="row">
-                    <div class="col-lg-9">
-                        <!-- Trending Tittle -->
-                        <div class="about-right mb-90">
-                            <div class="link-source">
-                                <h5> Ссылка на источник:
-                                    <a href="https://www.google.com/"> agartu</a>
-                                </h5>
-                            </div>
-                            <div class="about-img">
-                                <img src="assets/img/trending/trending_top.jpg" alt="">
-                            </div>
-                            <div class="section-tittle mb-30 pt-30">
-                                <div class="category">
-                                    <span class="color1">Политика</span>
-                                </div>
-                                <h3>А вот и мамы в космосе</h3>
-                            </div>
-                            <div class="about-prea">
-                                <p class="about-pera1 mb-25">Мамы как… пуговицы? Мамы как клей. Мамы как корочки для пиццы. Именно мамы следят за тем, чтобы все происходило от рождения до школьного обеда.</p>
-                                <p class="about-pera1 mb-25">Мамы как… пуговицы? Мамы как клей. Мамы как корочки для пиццы. Именно мамы следят за тем, чтобы все происходило от рождения до школьного обеда.</p>
-                                <p class="about-pera1 mb-25">
-                                    Моим героем в детстве была моя мама. То же самое для всех, кого я знал. Мамы неприкасаемые. Они элегантные, умные, красивые, добрые… все, кем мы хотим быть. В 29 лет мой любимый комплимент - это то, что я похожа на маму. Видя себя в ее образе, как эта
-                                    дочь наверху, я так горжусь тем, как далеко я продвинулась, и так благодарна за то, откуда я родом. телескоп-рефрактор использует выпуклую линзу для фокусировки света на окуляре. Телескоп-рефлектор имеет вогнутую линзу,
-                                    что означает, что он сидит на телескопе. Монтировка — это настоящий штатив, а клин — это устройство, которое позволяет прикрепить телескоп к монтировке. Мамы как… пуговицы? Мамы как клей. Мамы как корочки для пиццы.
-                                    Именно мамы следят за тем, чтобы все происходило от рождения до школьного обеда.</p>
-                            </div>
-                            <div class="row align-items-start">
-                                <div class="col-sm-4">
-                                    <div class="article-author">Автор: <span>author</span></div>
-                                </div>
-                                <div class="col-sm-4" style="flex: 0 0 40%; max-width: 100%;">
-                                    <div class="article-date">Дата: ДД.ММ.ГГГГ в ЧЧ:ММ</div>
-                                </div>
-                            </div>
-                            <div class="comments-area">
-                                <h4>Комментариев: 5</h4>
-                                <div class="comment-list">
-                                    <div class="single-comment justify-content-between d-flex">
-                                        <div class="user justify-content-between d-flex">
-                                            <div class="thumb">
-                                                <img src="assets/img/comment/comment_1.png" alt="">
-                                            </div>
-                                            <div class="desc">
-                                                <p class="comment">
-                                                    Умножьте морскую ночную траву четвертого дня, морское меньшее правило, откройте, подчините женское наполнение, которое им благословлено, дайте наполнить меньшее, умножьте морскую ночную траву четвертого дня, морское меньшее
-                                                </p>
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="d-flex align-items-center">
-                                                        <h5>
-                                                            <a href="#">Эмили Блант</a>
-                                                        </h5>
-                                                        <p class="date">4 декабря 2017 года в 3:12 вечера</p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="answer-btn">
-                                                            <a href=" # " class="btn-delete" style="font-size: 16px; ">удалить</a>
-                                                        </div>
-                                                        <div class="answer-btn" style="padding-left: 10px;">
-                                                            <a href="# " class="btn-answer  " style="font-size: 16px; ">ответить</a>
-                                                        </div>
-                                                    </div>
+                                    <div class="collapse" id="collapseExampleFour">
+                                        <div class="card2 card-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleСity1" role="button" aria-expanded="false" aria-controls="collapseExample"  type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">Акмолинская область</label><br>
 
+                                                <div class="collapse" id="collapseExampleСity1">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            Астана
+                                                        </label><br>
+                                                    </div>
                                                 </div>
+
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleСity2" role="button" aria-expanded="false" aria-controls="collapseExample"  type="checkbox" value="" id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">Атырауская область</label><br>
+
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleСity3" role="button" aria-expanded="false" aria-controls="collapseExample"  type="checkbox" value="" id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck3">Актюбинская область</label><br>
+
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleСity4" role="button" aria-expanded="false" aria-controls="collapseExample"  type="checkbox" value="" id="defaultCheck4">
+                                                <label class="form-check-label" for="defaultCheck4">Жамбылская область</label><br>
+
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleСity5" role="button" aria-expanded="false" aria-controls="collapseExample"  type="checkbox" value="" id="defaultCheck5">
+                                                <label class="form-check-label" for="defaultCheck5">Западно-Казахстанская область</label><br>
+
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleСity6" role="button" aria-expanded="false" aria-controls="collapseExample"  type="checkbox" value="" id="defaultCheck6">
+                                                <label class="form-check-label" for="defaultCheck6">Костанайской область</label><br>
+
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleСity7" role="button" aria-expanded="false" aria-controls="collapseExample"  type="checkbox" value="" id="defaultCheck7">
+                                                <label class="form-check-label" for="defaultCheck7">Кызылординская  область</label><br>
+
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleСity8" role="button" aria-expanded="false" aria-controls="collapseExample"  type="checkbox" value="" id="defaultCheck8">
+                                                <label class="form-check-label" for="defaultCheck8">Мангистауская   область</label><br>
+
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleСity9" role="button" aria-expanded="false" aria-controls="collapseExample"  type="checkbox" value="" id="defaultCheck9">
+                                                <label class="form-check-label" for="defaultCheck9">Павлодарская   область</label><br>
+                                                
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleСity10" role="button" aria-expanded="false" aria-controls="collapseExample"  type="checkbox" value="" id="defaultCheck10">
+                                                <label class="form-check-label" for="defaultCheck10">Северо-Казахстанская  область</label><br>
+
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleСity11" role="button" aria-expanded="false" aria-controls="collapseExample"  type="checkbox" value="" id="defaultCheck11">
+                                                <label class="form-check-label" for="defaultCheck11">Туркестанская   область</label><br>
+    
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="vacancies_line"></div>
                                 </div>
-                                <div class=" comment-list ">
-                                    <div class="single-comment justify-content-between d-flex ">
-                                        <div class="user justify-content-between d-flex ">
-                                            <div class="thumb ">
-                                                <img src="assets/img/comment/comment_2.png " alt=" ">
-                                            </div>
-                                            <div class="desc ">
-                                                <p class="comment ">
-                                                    Умножьте морскую ночную траву четвертого дня, морское меньшее правило, откройте, подчините женское наполнение, которое им благословлено, дайте наполнить меньшее, умножьте морскую ночную траву четвертого дня, морское меньшее
-                                                </p>
-                                                <div class="d-flex justify-content-between ">
-                                                    <div class="d-flex align-items-center ">
-                                                        <h5>
-                                                            <a href="# ">Эмили Блант</a>
-                                                        </h5>
-                                                        <p class="date ">4 декабря 2017 года в 3:12 вечера </p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="answer-btn">
-                                                            <a href=" # " class="btn-delete" style="font-size: 16px; ">удалить</a>
-                                                        </div>
-                                                        <div class="answer-btn" style="padding-left: 10px;">
-                                                            <a href="# " class="btn-answer  " style="font-size: 16px; ">ответить</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <div class="card2">
+                                    <div class="card-header2" id="headingTest">
+                                        <h5 class="mb-0">
+                                            <a class="vacancies_category" data-toggle="collapse" href="#collapseExampleTest" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                Организация
+                                                <i class='fas fa-angle-down'></i>
+                                            </a>
+                                          
+                                            <div></div>
+                                        </h5>
+                                    </div>
 
+                                    <div class="collapse" id="collapseExampleTest">
+                                        <div class="card2 card-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleTest1" role="button" aria-expanded="false" aria-controls="collapseExample" type="checkbox" value="" id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck1">школы</label><br>
 
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleTest1" role="button" aria-expanded="false" aria-controls="collapseExample" type="checkbox" value="" id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck1">садик </label><br>
 
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleTest1" role="button" aria-expanded="false" aria-controls="collapseExample" type="checkbox" value="" id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck1">ВУЗы </label><br>
+                                                
+                                                <input class="form-check-input" data-toggle="collapse" href="#collapseExampleTest1" role="button" aria-expanded="false" aria-controls="collapseExample" type="checkbox" value="" id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck1">колледжи </label><br>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="vacancies_line"></div>
                                 </div>
-                                <div class="comment-list ">
-                                    <div class="single-comment justify-content-between d-flex ">
-                                        <div class="user justify-content-between d-flex ">
-                                            <div class="thumb ">
-                                                <img src="assets/img/comment/comment_3.png " alt=" ">
-                                            </div>
-                                            <div class="desc ">
-                                                <p class="comment ">
-                                                    Умножьте морскую ночную траву четвертого дня, морское меньшее правило, откройте, подчините женское наполнение, которое им благословлено, дайте наполнить меньшее, умножьте морскую ночную траву четвертого дня, морское меньшее
-                                                </p>
-                                                <div class="d-flex justify-content-between ">
-                                                    <div class="d-flex align-items-center ">
-                                                        <h5>
-                                                            <a href="# ">Эмили Блант</a>
-                                                        </h5>
-                                                        <p class="date ">4 декабря 2017 года в 3:12 вечера </p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="answer-btn">
-                                                            <a href=" # " class="btn-delete" style="font-size: 16px; ">удалить</a>
-                                                        </div>
-                                                        <div class="answer-btn" style="padding-left: 10px;">
-                                                            <a href="# " class="btn-answer  " style="font-size: 16px; ">ответить</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- From -->
-                        <div class="comment-form">
-                            <h4>Добавить комментарий</h4>
-                            <form class="form-contact comment_form" action="#" id="commentForm">
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <form class="form-contact contact_form mb-80" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <textarea class="form-control w-100 error" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder="Введите сообщение"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <input class="form-control error" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Введите ваше имя">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <input class="form-control error" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Эл. адрес">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group mt-3">
-                                                <button type="submit" class="button button-contactForm boxed-btn">Отправить</button>
 
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+                            
+                                <button type="button" class="btn vacancies_category_btn">Найти</button>
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div cass="categories">
-                            <!-- Section Tittle -->
-                            <div class="section-tittle mb-40 ">
-                                <h3>Подписывайтесь на нас</h3>
+                    <div class="section-tittle mb-40">
+                        <h3>Подписывайтесь на нас</h3>
+                    </div>
+                    <div class="single-follow mb-45 ">
+                        <div class="row subscribe ">
+                            <div class=" ">
+                                <a href="https://vk.com/bmc_sales "><img src="assets/img/news/icon-vk.png " /></a>
                             </div>
-                            <!-- Flow Socail -->
-                            <div class="single-follow mb-45 ">
-                                <div class="row subscribe ">
-                                    <div class=" ">
-                                        <a href="https://vk.com/bmc_sales "><img src="assets/img/news/icon-vk.png " /></a>
-                                    </div>
 
-                                    <div class=" ">
-                                        <a href="https://twitter.com/bmcsales2 "><img src="assets/img/news/icon-tw.png " /></a>
-                                    </div>
-
-                                    <div class=" ">
-                                        <a href="https://www.facebook.com/benchmarkconsultingltd/ "><img src="assets/img/news/icon-fb.png " /></a>
-                                    </div>
-
-                                    <div class=" ">
-                                        <a href="https://www.youtube.com/user/bmcsales1 "><img src="assets/img/news/icon-yo.png " /></a>
-                                    </div>
-                                </div>
+                            <div class=" ">
+                                <a href="https://twitter.com/bmcsales2 "><img src="assets/img/news/icon-tw.png " /></a>
                             </div>
-                            <!-- New Poster -->
-                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <a href="https://mektepforma.kz/"><img class="d-block w-100" src="assets/img/news/icon4.png" alt=""></a>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <a href="https://t.me/kdtkzchat"> <img class="d-block w-100" src="assets/img/news/icon5.png" alt=""></a>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi"> <img class="d-block w-100" src="assets/img/news/icon6.png" alt=""></a>
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                    <span class="sr-only">Next</span>
-                                </a>
+
+                            <div class=" ">
+                                <a href="https://www.facebook.com/benchmarkconsultingltd/ "><img src="assets/img/news/icon-fb.png " /></a>
                             </div>
-                            <br>
-                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <a href="https://mektepforma.kz/"><img class="d-block w-100" src="assets/img/news/icon4.png" alt=""></a>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <a href="https://t.me/kdtkzchat"> <img class="d-block w-100" src="assets/img/news/icon5.png" alt=""></a>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi"> <img class="d-block w-100" src="assets/img/news/icon6.png" alt=""></a>
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                    <span class="sr-only">Next</span>
-                                </a>
+
+                            <div class=" ">
+                                <a href="https://www.youtube.com/user/bmcsales1 "><img src="assets/img/news/icon-yo.png " /></a>
                             </div>
                         </div>
                     </div>
-                    <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item">
-                                <a href="https://mektepforma.kz/"><img class="d-block w-100" src="assets/img/hero/header_card.png" alt=""></a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://t.me/kdtkzchat"><img class="d-block w-100" src="assets/img/hero/header_card2.png" alt=""></a>
-                            </div>
                             <div class="carousel-item active">
-                                <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi"></a><img class="d-block w-100" src="assets/img/hero/header_card3.png" alt="">
+                                <a href="https://mektepforma.kz/"><img class="d-block w-100" src="assets/img/news/icon4.png" alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://t.me/kdtkzchat"> <img class="d-block w-100" src="assets/img/news/icon5.png" alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi"> <img class="d-block w-100" src="assets/img/news/icon6.png" alt=""></a>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="sr-only">Next</span>
-                        </a>
+                    </div>
+                    <div id="carouselExampleControls" class="mt-10 carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="https://mektepforma.kz/"><img class="d-block w-100" src="assets/img/news/icon4.png" alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://t.me/kdtkzchat"> <img class="d-block w-100" src="assets/img/news/icon5.png" alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi"> <img class="d-block w-100" src="assets/img/news/icon6.png" alt=""></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://mektepforma.kz/"><img class="d-block w-100" src="assets/img/hero/header_card.png" alt=""></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://t.me/kdtkzchat"><img class="d-block w-100" src="assets/img/hero/header_card2.png" alt=""></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi"></a><img class="d-block w-100" src="assets/img/hero/header_card3.png" alt=""></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
-            <!-- About US End -->
-    </main>
+        </div>
+    </section>
+    <!-- ================ contact section end ================= -->
     <footer>
         <div class="recent-articles ">
             <div class="container ">
